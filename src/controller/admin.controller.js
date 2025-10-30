@@ -136,3 +136,22 @@ module.exports.allAdmin = async(req,res) => {
     return res.status(500).json({message : "Internal Server Error"})
   }
 }
+
+module.exports.addManager = async(req , res) => {
+  try {
+    const email = req.body.email
+    const existUser = await userModel.findOne({email : email})
+    if(existUser){
+      return res.status(409).json({message : "User Already Exist "})
+    }
+    req.body.profile = req.file.path
+    req.body.public_id = req.file.filename;
+    req.body.password = await bcrypt.hash(req.body.password , 10);
+
+    await userModel.create(req.body)
+    return res.status(200).json({message : "User Add Success"})
+  } catch (error) {
+    console.log(error)
+    return res.status(500).json({message : "Internal Server Error"})
+  }
+}
