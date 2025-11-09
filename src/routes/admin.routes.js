@@ -16,6 +16,6 @@ routes.put('/editAdmin/:id',verifyToken,verifyRole('Admin'),upload.single('profi
 routes.post('/changePassword/:id',verifyToken,verifyRole('Admin'),changePassword)
 routes.get('/allAdmin',allAdmin)
 
-routes.post('/addManager',verifyToken,verifyRole('Admin'),addManager)
+routes.post('/addManager',verifyToken,verifyRole('Admin'),upload.single('profile'),addManager)
 
 module.exports = routes;

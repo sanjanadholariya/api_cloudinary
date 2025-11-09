@@ -1,0 +1,905 @@
+{
+	"info": {
+		"_postman_id": "1586df3c-710d-49b5-a4bf-103cdc9e46ba",
+		"name": "api_cloudinary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43188321"
+	},
+	"item": [
+		{
+			"name": "API_Cloudinary",
+			"item": [
+				{
+					"name": "addAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "prince",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "prince@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (242).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/addAdmin",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"addAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "c",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "c@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Admin",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (242).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/addAdmin",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"addAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "33"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21-JvRXNgwnwbEjFOtNcZjd0iTbOKc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Oct 2025 17:54:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Admin Added Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "loginAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "p@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/loginAdmin",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"loginAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "a@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/loginAdmin",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"loginAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "190"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"be-G1qOmA/fk66W1s9Em7oQCB38/WE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Oct 2025 04:40:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login Success\",\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAwZmRlYTRkMGNhMWE1YThiZWM0MGUiLCJpYXQiOjE3NjE3MTI4MzZ9.rx2JTgUUdly7UmWPzFLfjJEfZDD4eyMZ2HE3c74gx7s\"\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/deleteAdmin/6900fad57b3ea53b2f4216e7",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"deleteAdmin",
+								"6900fad57b3ea53b2f4216e7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteAdmin",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/deleteAdmin/6900fad57b3ea53b2f4216e7",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"deleteAdmin",
+										"6900fad57b3ea53b2f4216e7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "33"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21-vy4xlOFWBym48QknPh2rjNjI83M\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Oct 2025 06:29:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Delete User Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "editAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAxYjRmYzVjNWFkNjA0MjIxNTViYWEiLCJpYXQiOjE3NjE4MDExNjJ9.itvnHC-j7kPTMiOBh_5mUTJ0FXfT2LRWy-bhzFb91gk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAxYjRmYzVjNWFkNjA0MjIxNTViYWEiLCJpYXQiOjE3NjE4MDExNjJ9.itvnHC-j7kPTMiOBh_5mUTJ0FXfT2LRWy-bhzFb91gk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "princess",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Female",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (260).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/editAdmin/6901b4fc5c5ad60422155baa",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"editAdmin",
+								"6901b4fc5c5ad60422155baa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editAdmin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAxYjRmYzVjNWFkNjA0MjIxNTViYWEiLCJpYXQiOjE3NjE4MDExNjJ9.itvnHC-j7kPTMiOBh_5mUTJ0FXfT2LRWy-bhzFb91gk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "princess",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Female",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (260).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/editAdmin/6901b4fc5c5ad60422155baa",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"editAdmin",
+										"6901b4fc5c5ad60422155baa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "424"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a8-evYcelCyIGTXr9DJM8I862mFbC0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Oct 2025 05:57:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Update Success\",\n    \"data\": {\n        \"isDelete\": false,\n        \"_id\": \"6901b4fc5c5ad60422155baa\",\n        \"name\": \"princess\",\n        \"email\": \"p@gmail.com\",\n        \"gender\": \"Female\",\n        \"role\": \"Admin\",\n        \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761803828/cloudinaryDemo/nntqftpfqthqufgngqvf.png\",\n        \"idDelete\": false,\n        \"public_id\": \"cloudinaryDemo/nntqftpfqthqufgngqvf\",\n        \"createdAt\": \"2025-10-29T06:32:28.068Z\",\n        \"updatedAt\": \"2025-10-30T05:57:06.329Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAxYjRmYzVjNWFkNjA0MjIxNTViYWEiLCJpYXQiOjE3NjE4MDExNjJ9.itvnHC-j7kPTMiOBh_5mUTJ0FXfT2LRWy-bhzFb91gk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/changePassword/6901b4fc5c5ad60422155baa",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"changePassword",
+								"6901b4fc5c5ad60422155baa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "changePassword",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "newPassword",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/changePassword/6901b4fc5c5ad60422155baa",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"changePassword",
+										"6901b4fc5c5ad60422155baa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-K4+qaXmpvknevJ8XBzRuAJ5TvGA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Oct 2025 07:18:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password Change Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "allAdmin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api-cloudinary.onrender.com/api/admin/allAdmin",
+							"protocol": "https",
+							"host": [
+								"api-cloudinary",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"admin",
+								"allAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "https://api-cloudinary.onrender.com/api/admin/allAdmin",
+									"protocol": "https",
+									"host": [
+										"api-cloudinary",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"admin",
+										"allAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 30 Oct 2025 12:41:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "583"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "996afc4859ac80b8-BOM"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"69c-DwyG7FhJ8YJIARVTeyhIN1+MadY\""
+								},
+								{
+									"key": "rndr-id",
+									"value": "38f7bde7-f4cc-45b4"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-render-origin-server",
+									"value": "Render"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Fetch All Admin Success\",\n    \"data\": [\n        {\n            \"_id\": \"6900fad57b3ea53b2f4216e7\",\n            \"name\": \"sanjana\",\n            \"email\": \"s@gmail.com\",\n            \"gender\": \"Female\",\n            \"role\": \"Admin\",\n            \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761671895/cloudinaryDemo/xsdciejmx2zbsinxg8yl.png\",\n            \"createdAt\": \"2025-10-28T17:18:13.259Z\",\n            \"updatedAt\": \"2025-10-29T06:29:19.017Z\",\n            \"isDelete\": false\n        },\n        {\n            \"isDelete\": false,\n            \"_id\": \"6900fdea4d0ca1a5a8bec40e\",\n            \"name\": \"a\",\n            \"email\": \"a@gmail.com\",\n            \"gender\": \"Female\",\n            \"role\": \"Admin\",\n            \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761672685/cloudinaryDemo/vmzzqwff1yycuo9wyulx.png\",\n            \"createdAt\": \"2025-10-28T17:31:22.785Z\",\n            \"updatedAt\": \"2025-10-28T17:31:22.785Z\",\n            \"isDelete \": \"false\"\n        },\n        {\n            \"_id\": \"690102df4d0ca1a5a8bec412\",\n            \"name\": \"b\",\n            \"email\": \"b@gmail.com\",\n            \"gender\": \"Male\",\n            \"role\": \"Admin\",\n            \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761673952/cloudinaryDemo/hbmoavafkh2q5tjwcp2z.png\",\n            \"createdAt\": \"2025-10-28T17:52:31.082Z\",\n            \"updatedAt\": \"2025-10-28T17:52:31.082Z\",\n            \"isDelete\": false\n        },\n        {\n            \"_id\": \"690103654d0ca1a5a8bec415\",\n            \"name\": \"c\",\n            \"email\": \"c@gmail.com\",\n            \"gender\": \"Male\",\n            \"role\": \"Admin\",\n            \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761674087/cloudinaryDemo/y0hqvcqe3ndpkweddi28.png\",\n            \"createdAt\": \"2025-10-28T17:54:45.164Z\",\n            \"updatedAt\": \"2025-10-28T17:54:45.164Z\",\n            \"isDelete\": false\n        },\n        {\n            \"isDelete\": false,\n            \"_id\": \"6901b4fc5c5ad60422155baa\",\n            \"name\": \"princess\",\n            \"email\": \"p@gmail.com\",\n            \"gender\": \"Female\",\n            \"role\": \"Admin\",\n            \"profile\": \"https://res.cloudinary.com/dw29vpjgh/image/upload/v1761803828/cloudinaryDemo/nntqftpfqthqufgngqvf.png\",\n            \"idDelete\": false,\n            \"public_id\": \"cloudinaryDemo/nntqftpfqthqufgngqvf\",\n            \"createdAt\": \"2025-10-29T06:32:28.068Z\",\n            \"updatedAt\": \"2025-10-30T07:18:00.728Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "addManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTAxYjRmYzVjNWFkNjA0MjIxNTViYWEiLCJpYXQiOjE3NjE4MDExNjJ9.itvnHC-j7kPTMiOBh_5mUTJ0FXfT2LRWy-bhzFb91gk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "radhe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "r@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Female",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Manager",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/SANJANA/OneDrive/Pictures/mine/IMG-20251028-WA0001.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/addManager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"addManager"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addManager",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "radhe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "r@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Female",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Manager",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/SANJANA/OneDrive/Pictures/mine/IMG-20251028-WA0001.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/addManager",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"addManager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-cnhXWxraFftGi+Kctt6JMBJRX+E\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Oct 2025 13:39:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Add Success\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
